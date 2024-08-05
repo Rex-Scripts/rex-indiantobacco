@@ -29,7 +29,7 @@ end)
 
 -- remove seed item
 RegisterServerEvent('rex-indiantobacco:server:removeitem')
-AddEventHandler('rex-indiantobacco:server:plants:removeitem', function(item, amount)
+AddEventHandler('rex-indiantobacco:server:removeitem', function(item, amount)
     local src = source
     local Player = RSGCore.Functions.GetPlayer(src)
     Player.Functions.RemoveItem(item, amount)
